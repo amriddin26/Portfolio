@@ -335,7 +335,7 @@ a.btn:nth-child(2)::before{
     height: 650px;
     border-radius: 320px 60px 400px  100px;
     border: 20px solid  #fff;
-    box-shadow: 0 0 37px #fff, inset 0 0 20px #fff;
+    box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
     -webkit-box-reflect: below 20px linear-gradient(transparent,transparent,#0002);
 }
 
