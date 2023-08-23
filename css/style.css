@@ -15,7 +15,7 @@
     --bg-color: #220525;
     --secon-bg-color: #292e33;
     --big-font:2.5rem;
-    --norma-font:2rem;
+    --normal-font:2rem;
     --neom-box-shadow:0 0 .5rem  #12f7ff;
     --h2-font:3rem;
     --font-neom-text-shadow: 0 0 10px rgba( 18,247,255,0.3),
@@ -377,4 +377,107 @@ a.btn:nth-child(2)::before{
 svg{
     width: 0;
     height: 0;
+}
+
+
+/* About  On */
+
+
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    background: var(--secon-bg-color);
+}
+
+
+.about .img-about{
+    text-align: center;
+    position: relative;
+}
+
+.about .img-about img{
+   max-width: 400px;
+   height: auto;
+}
+
+.about-content span{
+    color: #fdfdfd;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.about-content h2{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p{
+    color: #fdfdfd;
+    font-weight: 300;
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-about1,
+.info-about2,
+.info-about3{
+    background: var(--bg-color);
+    font-style: .5rem;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: var(--neom-box-shadow);
+    border: 1px solid  var(--hover-color);
+    outline: 2px solid var(--bg-color);
+    z-index: 100;
+    animation: moreph 5s linear infinite;
+}
+
+
+.info-about1{
+    left: 10%;
+    top: 34%;
+    transition: 0.20s;
+}
+
+.info-about2{
+    left: 66%;
+    top: 15%;
+}
+
+.info-about3{
+    left: 61%;
+    top: 70%;
+}
+
+@keyframes moreph {
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80%{
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 70%;
+    }
 }
