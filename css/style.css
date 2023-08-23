@@ -453,7 +453,7 @@ svg{
 .info-about1{
     left: 10%;
     top: 34%;
-    transition: 0.20s;
+    transition: -0.20s;
 }
 
 .info-about2{
@@ -481,3 +481,5 @@ svg{
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 70%;
     }
 }
+
+/* skld,fklks */
