@@ -405,7 +405,7 @@ svg{
 
 .about-content span{
     color: #fdfdfd;
-    font-size: 18px;
+    font-size: .8rem;
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -465,6 +465,14 @@ svg{
     left: 61%;
     top: 70%;
 }
+
+
+.img-about span{
+    color: var(--hover-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 
 @keyframes moreph {
     0%,
