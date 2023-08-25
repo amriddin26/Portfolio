@@ -385,6 +385,7 @@ svg{
 
 .about{
     height: 100vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,13 +406,13 @@ svg{
    border: 7px solid  black;
     outline: 2px solid var(--hover-color);
     z-index: 100;
-   animation: img-card 5s linear infinite;
+   animation: img-card 4s linear infinite;
 }
 
 @keyframes img-card{
     0%,
     100%{
-        border-radius: 49% 31% 66% 34% / 21% 30% 70% 79%;
+        border-radius: 80% 31% 66% 34% / 71% 30% 70% 49%;
     }
     30%{
         border-radius: 70% 30% 50% 50% / 30% 30% 70% 60%;
@@ -420,7 +421,7 @@ svg{
         border-radius: 70% 60% 60% 100% / 100% 50% 60% 60%;
     }
     80%{
-        border-radius: 90% 21% 76% 34% / 21% 30% 70% 40%;
+        border-radius: 90% 21% 76% 34% / 41% 50% 70% 50%;
     }
 }
 
@@ -515,14 +516,14 @@ svg{
 .main-text{
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
     color: var(--hover-color);
 }
 
 
 .main-text h2{
     font-weight: 700;
-    font-size: var(--normal-font)
+    font-size: 45px;
 }
 
 .main-text span{
@@ -553,8 +554,47 @@ svg{
 
 .service-box{
   width: auto;
+  height: 500px;
   justify-content: center;
 }
+
+.service-box:hover{
+    transform: translateY(-1rem);
+}
+
+.section-icon{
+    border: 3px solid var(--hover-color);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    color: var(--hover-color);
+    box-shadow: var(--neom-box-shadow);
+    outline: 4px solid var(--bg-color);
+    font-size: 5rem;
+}
+
+.service-box h3{
+    margin-top: 8px;
+    font-size: 1.5rem;
+}
+
+.service-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+
+.service-btn{
+    margin: 0 auto;
+    justify-content: center;
+}
+
 
 .services{
     height: 100vh;
@@ -578,3 +618,113 @@ svg{
 }
 
 /* skld,fklks */
+
+.skills{
+    width: auto;
+    height: 100vh;
+    /* background: rgb(21,63,102);
+   background: linear-gradient(317deg, rgba(21,63,102,1) 0%, rgba(175,231,172,0.7455357142857143) 34%, rgba(18,187,93,1) 71%, rgba(45,157,253,1) 100%); */
+
+   background: rgb(92,138,60);
+   background: linear-gradient(317deg, rgba(92,138,60,1) 0%, rgba(9,170,130,0.7455357142857143) 34%, rgba(9,59,91,1) 70%, rgba(13,69,84,1) 100%);
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    background: var(--hover-color);
+    box-shadow: var(--neom-box-shadow);
+}
+
+.skill-bar .bar .html{
+    width: 72%;
+    animation: html 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+.skill-bar .bar .figma{
+    width: 90%;
+    animation: figma 3s;
+}
+
+@keyframes figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 4s;
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.skill-bar .bar .css{
+    width: 62%;
+    animation: css 5s;
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 62%;
+    }
+}
+
