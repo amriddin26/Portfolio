@@ -441,7 +441,7 @@ svg{
 
 .about-content h3{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 5rem;
     margin-bottom: .2rem;
 }
 
@@ -456,7 +456,7 @@ svg{
 .info-about2,
 .info-about3{
     background: var(--bg-color);
-    font-style: .5rem;
+    font-style: .6rem;
     position: absolute;
     padding: 10px;
     width: 90px;
@@ -542,8 +542,23 @@ svg{
     grid-gap: 2rem;
 }
 
+.section-services .service-box{
+    flex: 1 1 18rem;
+    padding: 3rem 2rem 3rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+}
 
+.service-box{
+  width: auto;
+  justify-content: center;
+}
 
+.services{
+    height: 100vh;
+}
 
 
 @keyframes moreph {
