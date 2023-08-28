@@ -1,10 +1,10 @@
-const circles = document.querySelectorAll('.circles1');
-circles.forEach(elem=>{
-    var dots = elem.getAttribute("data-dote");
+    const circles1 = document.querySelectorAll('.circle1');
+    circles1.forEach(elem=>{
+    var dots = elem.getAttribute("data-dots");
     var marked = elem.getAttribute("data-percent");
     var percent = Math.floor(dots*marked/100);
     var points = "";
-    var rotate = 360 / dots;
+    var rotate = 360 / dots; 
 
 
     for(let i = 0 ; i < dots ; i++){
