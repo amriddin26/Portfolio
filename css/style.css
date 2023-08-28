@@ -558,11 +558,12 @@ svg{
 .service-box{
   width: auto;
   height: 500px;
+  -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0002);
   justify-content: center;
 }
 
 .service-box:hover{
-    transform: translateY(-1rem);
+    transform: translateY(-2.2rem);
 }
 
 .section-icon{
@@ -668,6 +669,7 @@ svg{
     height: 100%;
     position: absolute;
     border-radius: 25px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0002);
     background: var(--hover-color);
     box-shadow: var(--neom-box-shadow);
 }
@@ -794,4 +796,41 @@ svg{
         background: var(--hover-color);
         box-shadow: var(--neom-box-shadow);
     }
+}
+
+.fillter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
+
+.fillter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 1.2rem;
+    color: var(--text-color);
+}
+
+.fillter-buttons .btn:hover{
+    color: var(--hover-color);
+}
+
+.portfolio-gellery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(470px , 1fr));
+    gap: 2rem;
+}
+
+.port-box{
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
 }
