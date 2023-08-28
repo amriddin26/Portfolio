@@ -14,7 +14,7 @@
 
 
     const pointsMarked = elem.querySelectorAll('.points');
-    for(let i = 0 ; i < percent ; i++){
-        pointsMarked[i].classList.add('marked')
+    for(let i = 0; i < percent ; i++){
+        pointsMarked[i].classList.add('marked');
     }
 });

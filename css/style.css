@@ -763,29 +763,26 @@ svg{
 
 .circle1{
     width: 100%;
-    height: 120px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
 }
 
 .circle1 .points{
     width: 2px;
-    height: 10px;
+    height: 12px;
     background-color: var(--bg-color);
     position: absolute;
-    border-radius: 3px;
+    border-radius: 5px;
     transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px); 
 }
 
-.points .marked{
+.points.marked{
     animation: glow  0.04s linear forwards;
     animation-delay: calc(var(--i)*0.05s);
 }
-
-
-
 
 
 @keyframes glow {
