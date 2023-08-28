@@ -39,6 +39,9 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 66px;
+    background: rgb(21,63,102);
+   background: linear-gradient(317deg, rgba(21,63,102,1) 0%, rgba(175,231,172,0.7455357142857143) 34%, rgba(18,187,93,1) 71%, rgba(45,157,253,1) 100%);
     padding: 20px 10%;
     position: fixed;
 }
@@ -622,9 +625,6 @@ svg{
 .skills{
     width: auto;
     height: 100vh;
-    /* background: rgb(21,63,102);
-   background: linear-gradient(317deg, rgba(21,63,102,1) 0%, rgba(175,231,172,0.7455357142857143) 34%, rgba(18,187,93,1) 71%, rgba(45,157,253,1) 100%); */
-
    background: rgb(92,138,60);
    background: linear-gradient(317deg, rgba(92,138,60,1) 0%, rgba(9,170,130,0.7455357142857143) 34%, rgba(9,59,91,1) 70%, rgba(13,69,84,1) 100%);
 }
