@@ -41,3 +41,4 @@ setInterval(chandeText,3000);
 // var mixer = mixitu  ///////////////////
 
 var mixer = mixitup('.portfolio-gellery');
+var mixer = mixitup('.portfolio-gellery');
