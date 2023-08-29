@@ -36,4 +36,8 @@ let chandeText = () =>{
 };
 
 chandeText();
-setInterval(chandeText,3000)
+setInterval(chandeText,3000);
+
+// var mixer = mixitu  ///////////////////
+
+var mixer = mixitup('.portfolio-gellery');

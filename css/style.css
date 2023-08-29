@@ -840,8 +840,8 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 500px;
 }
 
 .port-image img{
@@ -867,8 +867,12 @@ svg{
     padding: 0 2rem;
 }
 
-.port-content:hover{
+.port-box:hover .port-content{
     opacity: 1;
+}
+
+.port-box:hover .port-image img{
+    transform: scale(1.1);
 }
 
 .port-content h3{
