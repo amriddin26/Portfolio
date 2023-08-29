@@ -826,6 +826,7 @@ svg{
 }
 
 .port-box{
+    position: relative;
     border-radius: 15px;
     overflow: hidden;
     background: #292e33;
@@ -833,4 +834,68 @@ svg{
     grid-template-rows: 1fr auto;
     align-items: center;
     border: 2px solid var(--hover-color);
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.port-image img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transform: .5s;
+}
+
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,.2), #12f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.port-content:hover{
+    opacity: 1;
+}
+
+.port-content h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.port-content p{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    margin: 5px 0 15px 0;
+}
+
+.port-content a{
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid var(--hover-color);
+    outline: 2px solid #fff;
+}
+
+.port-content a i{
+    font-size: 1.3rem;
+    color: var(--secon-bg-color);
 }
