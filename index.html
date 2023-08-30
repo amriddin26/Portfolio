@@ -14,7 +14,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo"><span>A</span>mir.com</div>
+        <div class="logo"> <span id="text" class=" element"></span></div>
         <ul class="navlist">
             <li><a href="#home" style="--i:1;">Home</a></li>
             <li><a href="#about" style="--i:2;">About</a></li>
@@ -349,6 +349,14 @@
     <script src="js/animaton.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ["Amriddin", "Jo'rayev"],
+            typeSpeed: 30,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
 </body>
 
 </html>

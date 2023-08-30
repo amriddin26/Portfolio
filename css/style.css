@@ -48,6 +48,10 @@
       color: var(--hover-color);
   }
   
+  #text {
+      color: #0f0;
+  }
+  
   .navlist {
       display: flex;
   }
@@ -499,8 +503,10 @@
   }
   
   .main-text h2 {
+      text-align: center;
       font-weight: 700;
-      font-size: 45px;
+      font-size: 75px;
+      color: var(--hover-color);
   }
   
   .main-text span {
