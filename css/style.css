@@ -36,6 +36,7 @@
       background: linear-gradient(317deg, rgba(21, 63, 102, 1) 0%, rgba(175, 231, 172, 0.7455357142857143) 34%, rgba(18, 187, 93, 1) 71%, rgba(45, 157, 253, 1) 100%);
       padding: 20px 10%;
       position: fixed;
+      z-index: 100000000000000000000;
   }
   
   .logo {
