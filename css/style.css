@@ -506,7 +506,7 @@
   .main-text h2 {
       text-align: center;
       font-weight: 700;
-      font-size: 75px;
+      font-size: 50px;
       color: var(--hover-color);
   }
   
@@ -876,4 +876,84 @@
   .port-content a i {
       font-size: 1.3rem;
       color: var(--secon-bg-color);
+  }
+  
+  .wrapper-text {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background: transparent;
+      margin: 0 auto;
+      border: 2px solid var(--bg-color);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .wrapper-text .form-box {
+      width: 100%;
+      padding: 40px;
+  }
+  
+  .form-box h1 {
+      font-size: 2em;
+      color: #162939;
+      text-align: center;
+  }
+  
+  .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      border-bottom: 2px solid #162938;
+      margin: 30px 0;
+  }
+  
+  .input-box label {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      font-size: 1em;
+      color: #162938;
+      font-weight: 500;
+      pointer-events: none;
+      transition: 1s;
+  }
+  
+  .input-box label:nth-child(1):focus~label {
+      top: -8px;
+      transition: 2s;
+  }
+  
+  .input-box input:focus~label,
+  .input-box input:valid~label {
+      top: -5px;
+  }
+  
+  .input-box input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+  }
+  
+  .input-box .icon {
+      position: absolute;
+      right: 8px;
+      font-size: 1.2em;
+      color: #162938;
+      line-height: 57px;
+  }
+  
+  .contact {
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(https://i.pinimg.com/564x/86/fb/32/86fb32e96c417622ee9cf4d9c71689d9.jpg);
   }

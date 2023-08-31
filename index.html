@@ -346,22 +346,31 @@
             <span>Ask me Question</span>
             <h2>Contact Me</h2>
         </div>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail-outline"></ion-icon>
+        <div class="wrapper-text">
+            <form action="#">
+                <div class="form-box">
+                    <h1>Logo</h1>
+                    <div class="input-box">
+                        <span class="icon">
+                    <i class='bx bxs-envelope'></i>
                 </span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="lock-closed"></ion-icon>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                    <i class='bx bxs-lock-open-alt'></i>
                 </span>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-        </form>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label><a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </form>
+        </div>
     </section>
 
 
@@ -372,8 +381,8 @@
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/animaton.js"></script>
     <script src="js/mixitup.min.js"></script>
-    <script src="js/ionicons.esm.js"></script>
-    <script src="js/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed('.element', {
