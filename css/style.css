@@ -921,17 +921,13 @@
       color: #162938;
       font-weight: 500;
       pointer-events: none;
-      transition: 1s;
-  }
-  
-  .input-box label:nth-child(1):focus~label {
-      top: -8px;
-      transition: 2s;
+      transition: .5s;
   }
   
   .input-box input:focus~label,
   .input-box input:valid~label {
       top: -5px;
+      display: block;
   }
   
   .input-box input {
@@ -940,6 +936,10 @@
       background: transparent;
       border: none;
       outline: none;
+      font-size: 1em;
+      color: #162938;
+      font-weight: 600;
+      padding: 0 35px 0 5px;
   }
   
   .input-box .icon {
@@ -948,6 +948,32 @@
       font-size: 1.2em;
       color: #162938;
       line-height: 57px;
+  }
+  
+  .remember-forgot {
+      font-size: .9em;
+      color: #162938;
+      font-weight: 500;
+      margin: -15px 0 15px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .remember-forgot label input {
+      accent-color: #162938;
+      margin-right: 3px;
+  }
+  
+  .remember-forgot a {
+      color: #082cab;
+      font-weight: 600;
+      margin-left: 10px;
+      text-decoration: none;
+      transition: .25s;
+  }
+  
+  .remember-forgot a:hover {
+      text-decoration: underline;
   }
   
   .contact {
