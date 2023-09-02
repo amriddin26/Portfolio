@@ -1,0 +1,105 @@
+/* // made by Gambhir sharma on 23th August 2023 */
+
+
+/* // the same day when chandrayan 3 will land on Moon & also the match betn Pragyan & Magnus. Fun fact the moon rover name is also Pragyan.. */
+
+
+/* // Inspired from instagram/@Nick.the.designer */
+
+
+/* link: https://www.instagram.com/reel/CwPI4e4t_aI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== */
+
+html {
+    --zoom: 120;
+    /* declaring variable here */
+    --black: #000;
+    --white: #fff;
+    --red: #d34747;
+    --green: #1c6f1c;
+    --blue: #2a2aaa;
+    --yellow: yellow;
+    --grey: grey;
+    --violet: violet;
+    --purple: purple;
+    --pink: pink;
+    --bg: #202020;
+}
+
+:root {
+    --unit: 1vmin;
+    --available-screen-min: 665;
+    --px: calc(var(--zoom) * (var(--unit) / var(--available-screen-min)));
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+*::after,
+*::before {
+    content: "";
+    display: block;
+    position: relative;
+}
+
+head::before,
+head::after,
+body::before,
+body::after,
+html::before,
+html::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    /* to make the animation smoother in chrome */
+    filter: blur(0);
+}
+
+body {
+    all: unset;
+    background-color: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --space-animation-time: 40s;
+    --moon-animation-time: 20s;
+}
+
+.canvas {
+    height: calc(400 * var(--px));
+    width: calc(400 * var(--px));
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+    background-image: url("https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY-1920-80.jpg.webp");
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background-position: left;
+    background-repeat: repeat-y;
+    animation: animation var(--space-animation-time) linear infinite;
+}
+
+.moon {
+    background-color: var(--grey);
+    height: calc(200 * var(--px));
+    width: calc(200 * var(--px));
+    border-radius: 50%;
+    box-shadow: 0px 0px calc(70 * var(--px)) calc(5 * var(--px)) #fff;
+    background-image: url("https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg");
+    background-size: calc(430 * var(--px));
+    background-position: left;
+    background-repeat: no-repeat;
+    animation: animation var(--moon-animation-time) linear infinite;
+}
+
+@keyframes animation {
+    to {
+        background-position: right;
+    }
+}

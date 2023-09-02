@@ -1,0 +1,15 @@
+body,
+html {
+    background: #000;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#c {
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

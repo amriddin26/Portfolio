@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir/Partfolyo/.uz</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -29,7 +29,7 @@
     <!-- header  end -->
 
     <section id="home" class="home">
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-right">
             <h1>Hello, my Amri Jorayev</h1>
             <div class="change-text">
                 <h3>And I'm</h3>
@@ -70,7 +70,7 @@
 
         </div>
 
-        <div class="home-image">
+        <div class="home-image" data-aos="fade-left">
             <div class="img-block">
                 <div class="img-box">
                     <img src="image/Hollywood Issue - Gregg Sulkin.jpg" width="430px" height="450px">
@@ -93,7 +93,7 @@
     <!-- Home   End  _______-----_______----->
 
     <section id="about" class="about">
-        <div class="img-about">
+        <div class="img-about" data-aos="fade-right">
             <img src="image/card1.jpg" width="630px" height="650px">
             <div class="info-about1">
                 <span>1+</span>
@@ -108,7 +108,7 @@
                 <p>Happy Cionts</p>
             </div>
         </div>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left">
             <span>Let me inroduce myself</span>
             <h2>About Me</h2>
             <h3>A story of Good and Evil</h3>
@@ -129,7 +129,7 @@
         </div>
 
         <div class="section-services">
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up" data-aos-duration="3000">
                 <i class='bx bxs-layer section-icon'></i>
                 <h3>Graphic Desinger</h3>
                 <p>
@@ -140,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up" data-aos-duration="3000">
                 <i class='bx bx-code-alt section-icon'></i>
                 <h3>Frontend&nbsp;Developer</h3>
                 <p>
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up" data-aos-duration="3000">
                 <i class='bx bx-desktop section-icon'></i>
                 <h3>Computer Scientist</h3>
                 <p>
@@ -343,11 +343,11 @@
 
 
     <section id="contact" class="contact">
-        <div class="main-text">
+        <div class="main-text" data-aos="fade-up" data-aos-duration="3000">
             <span>Ask me Question</span>
             <h2>Contact Me</h2>
         </div>
-        <div class="wrapper-text  login">
+        <div class="wrapper-text  login" data-aos="fade-up" data-aos-duration="3000">
             <form action="#">
                 <div class="form-box">
                     <h1>For reference</h1>
@@ -382,6 +382,8 @@
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/animaton.js"></script>
     <script src="js/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -392,6 +394,10 @@
             loop: true,
             loopCount: Infinity,
         });
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 </body>
 
